@@ -8,7 +8,7 @@ load_dotenv()
 def send_whatsapp_via_twilio(message, recipient_whatsapp_number):
     ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
     AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
-    TWILIO_WHATSAPP_NUMBER = "whatsapp:+14155238886"  
+    TWILIO_WHATSAPP_NUMBER = os.getenv("TWILIO_WHATSAPP_NUMBER")
 
     client = Client(ACCOUNT_SID, AUTH_TOKEN)
 
