@@ -1,0 +1,7 @@
+langgraph
+langchain-groq
+langchain-core
+python-dotenv
+fastapi>=0.110.0  # Optional for API
+uvicorn >=0.20.0  # Optional for API
+langchain-openai
